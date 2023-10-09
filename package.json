@@ -1,0 +1,22 @@
+{
+  "name": "micro_services_sample",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This project is a simple sample of micro services, using npm & nodeJs.",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run users-server\" \"npm run orders-server\"",
+    "orders-server": "node orders_server.js",
+    "users-server": "node users_server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
